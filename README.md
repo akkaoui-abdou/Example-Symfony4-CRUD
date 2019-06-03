@@ -1,18 +1,23 @@
 Simple Exemple Symfony 4 CRUD
 ===
 create a simple project symfony4 with action :
+<ul>
 
-<p>Add and Update and Delete in database with component ORM Doctrine</p>
-<p>Upload picture </p>
-<p>Relation Doctrine between entity: ManyToOne</p>
-<p>Use DataFixtures</p>
+<li>Add and Update and Delete in database with component ORM Doctrine</li>
+<li>Upload picture </li>
+<li>Relation Doctrine between entity: ManyToOne</li>
+<li>Use DataFixtures</li>
+<ul>
 
 
 Manage Notice:
 ---
-<p>Add and Update and Delete Category of Notice</p>
-<p>Add and Update and Delete Person will making notice</p>
-<p>Add and Update and Delete Notice</p>
+<ul>
+
+<li>Add and Update and Delete Category of Notice</li>
+<li>Add and Update and Delete Person will making notice</li>
+<li>Add and Update and Delete Notice</li>
+<ul>
 
 
 Install Project Symfony4
