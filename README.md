@@ -46,8 +46,8 @@ php bin/console doctrine:database:create
 
 Create shema to database
 ---
-php bin/console doctrine:schema:update --dump-sql
-php bin/console doctrine:schema:update --force
+<p>php bin/console doctrine:schema:update --dump-sql</p>
+<p>php bin/console doctrine:schema:update --force</p>
 
 
 
