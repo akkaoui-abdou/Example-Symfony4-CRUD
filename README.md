@@ -1,7 +1,19 @@
 Simple Exemple Symfony 4 CRUD
 ===
+create a simple project symfony4 with action :
 
-we will learn how to create a simple project symfony4
+<p>Add and Update and Delete in database with component ORM Doctrine</p>
+<p>Upload picture </p>
+<p>Relation Doctrine between entity: ManyToOne</p>
+<p>Use DataFixtures</p>
+
+
+Manage Notice:
+---
+<p>Add and Update and Delete Category of Notice</p>
+<p>Add and Update and Delete Person will making notice</p>
+<p>Add and Update and Delete Notice</p>
+
 
 Install Project Symfony4
 ---
