@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}List category{% endblock %}
+
+{% block body %}
+
+
+
+
+
+ {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+
+
+<h1>List category</h1>
+
+
+      <div class="mb-6">
+	    <div class="float-right mb-3">
+			<a><button class="btn btn-primary">Add category</button></a>
+			<a class="ml-3" href={{ path('person.create') }}><button class="btn btn-primary">Add Person</button></a>
+		</div>
+
+
+</div>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>Category</td>
+			<td>Action</td>
+		</tr>
+	</thead>
+	<tbody>
+		
+
+		{% for cat in category %}
+		<tr>
+			<td>{{ cat.id }}</td>
+			<td><a href={{ path('person.show',{id:pers.id})}}>{{ cat.name }}</a></td>
+			
+			<td class="float-right">
+
+				<a onclick="javascript:confirm('Are you sure to update')" href={{ path('category.update',{id:pers.id})}}><button class="btn btn-success">Update</button>
+		        </a>
+
+				<a onclick="javascript:confirm('Are you sure to delete')" href={{ path('category.delete',{id:pers.id})}}><button class="btn btn-danger">Delete</button>
+		        </a>
+
+		        
+
+	</td>
+		</tr>
+		{% endfor %}
+
+
+	</tbody>
+	
+
+</table>
+
+
+{% endblock %}

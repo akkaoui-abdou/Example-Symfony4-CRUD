@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}List post{% endblock %}
+
+{% block body %}
+
+
+
+
+
+ {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+
+
+<h1>List Person</h1>
+
+
+      <div class="mb-6">
+	    <div class="float-right mb-3">
+			<a><button class="btn btn-primary">Add category</button></a>
+			<a class="ml-3" href={{ path('person.create') }}><button class="btn btn-primary">Add Person</button></a>
+		</div>
+
+
+</div>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>Image</td>
+			<td>Ref</td>
+			<td>Name</td>
+			<td>Action</td>
+		</tr>
+	</thead>
+	<tbody>
+		
+
+		{% for pers in person %}
+		<tr>
+			<td>{{ pers.id }}</td>
+			<td><img width="30" src={{ '/uploads/images/' ~ pers.picture}}></td>
+			<td><a href={{ path('person.show',{id:pers.id})}}>{{ pers.ref }}</a></td>
+			<td><a href={{ path('person.show',{id:pers.id})}}>{{ pers.name }}</a></td>
+			
+			<td class="float-right">
+
+				<a onclick="javascript:confirm('Are you sure to update')" href={{ path('person.update',{id:pers.id})}}><button class="btn btn-success">Update</button>
+		        </a>
+
+				<a onclick="javascript:confirm('Are you sure to delete')" href={{ path('person.delete',{id:pers.id})}}><button class="btn btn-danger">Delete</button>
+		        </a>
+
+		        
+
+	</td>
+		</tr>
+		{% endfor %}
+
+
+	</tbody>
+	
+
+</table>
+
+<div class="text-center">
+{{ knp_pagination_render(person) }}
+</div>
+
+{% endblock %}

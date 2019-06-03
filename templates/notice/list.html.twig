@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}List Notice{% endblock %}
+
+{% block body %}
+
+
+
+
+
+ {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+
+
+<h1>List Notice</h1>
+
+
+      <div class="mb-6">
+	    <div class="float-right mb-3">
+			<a href={{ path('category.create') }}><button class="btn btn-primary">Add category</button></a>
+			<a class="ml-3" href={{ path('person.create') }}><button class="btn btn-primary">Add Person</button></a>
+
+			<a class="ml-3" href={{ path('notice.create') }}><button class="btn btn-primary">Add Notice</button></a>
+
+
+
+
+
+		</div>
+
+
+</div>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>Title</td>
+			<td>Description</td>
+			<td>Date Notice</td>
+			<td>Category</td>
+			<td>Action</td>
+		</tr>
+	</thead>
+	<tbody>
+		
+
+		{% for notice in notice %}
+		<tr>
+			<td>{{ notice.id }}</td>
+			<td>{{ notice.title }}</td>
+			<td>{{ notice.description }}</td>
+			<td>{{ notice.dateNotice|date("m/d/Y") }}</td>
+			{% if notice.category.name is defined %}
+				<td>{{ notice.category.name }}</td>
+			{% else %}
+				<td>--</td>
+			{% endif %}
+
+			{% if notice.person.name is defined %}
+				<td>{{ notice.person.name }}</td>
+			{% else %}
+				<td>--</td>
+			{% endif %}
+
+
+			
+			<td class="float-right">
+
+				<a onclick="javascript:confirm('Are you sure to update')" href={{ path('notice.update',{id:notice.id})}}><button class="btn btn-success">Update</button>
+		        </a>
+
+				<a onclick="javascript:confirm('Are you sure to delete')" href={{ path('notice.delete',{id:notice.id})}}><button class="btn btn-danger">Delete</button>
+		        </a>
+
+		        
+
+	</td>
+		</tr>
+		{% endfor %}
+
+
+	</tbody>
+	
+
+</table>
+
+<div class="text-center">
+{{ knp_pagination_render(notice) }}
+</div>
+
+{% endblock %}
