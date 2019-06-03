@@ -34,11 +34,12 @@ for installing a component with composer:
 
 Exemple: orm doctrine 
 cmd: composer require orm
-
-<p>for start project symfony4 with cmd: php bin/console server:run</p>
-<p>for make new entity with cmd: php bin/console make:entity nameEntity</p>
-<p>for make new controller with cmd: php bin/console make:controller</p>
-<p>for make new form with cmd: php bin/console make:form</p>
+<ul>
+<li>for start project symfony4 with cmd: php bin/console server:run</li>
+<li>for make new entity with cmd: php bin/console make:entity nameEntity</li>
+<li>for make new controller with cmd: php bin/console make:controller</li>
+<li>for make new form with cmd: php bin/console make:form</li>
+</ul>
 
 Create database
 ---
