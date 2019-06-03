@@ -7,7 +7,7 @@ create a simple project symfony4 with action :
 <li>Upload picture </li>
 <li>Relation Doctrine between entity: ManyToOne</li>
 <li>Use DataFixtures</li>
-<ul>
+</ul>
 
 
 Manage Notice:
