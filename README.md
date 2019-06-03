@@ -17,7 +17,7 @@ Manage Notice:
 <li>Add and Update and Delete Category of Notice</li>
 <li>Add and Update and Delete Person will making notice</li>
 <li>Add and Update and Delete Notice</li>
-<ul>
+</ul>
 
 
 Install Project Symfony4
