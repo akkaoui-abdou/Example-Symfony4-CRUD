@@ -40,6 +40,16 @@ cmd: composer require orm
 <p>for make new controller with cmd: php bin/console make:controller</p>
 <p>for make new form with cmd: php bin/console make:form</p>
 
+Create database
+---
+php bin/console doctrine:database:create
+
+Create shema to database
+---
+php bin/console doctrine:schema:update --dump-sql
+php bin/console doctrine:schema:update --force
+
+
 
 Use Cmd for migration database
 ---
