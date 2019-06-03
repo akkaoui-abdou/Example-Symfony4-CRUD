@@ -23,10 +23,10 @@ for installing a component with composer:
 Exemple: orm doctrine 
 cmd: composer require orm
 
-for start project symfony4 with cmd: php bin/console server:run
-for make new entity with cmd: php bin/console make:entity nameEntity
-for make new controller with cmd: php bin/console make:controller
-for make new form with cmd: php bin/console make:form
+<p>for start project symfony4 with cmd: php bin/console server:run</p>
+<p>for make new entity with cmd: php bin/console make:entity nameEntity</p>
+<p>for make new controller with cmd: php bin/console make:controller</p>
+<p>for make new form with cmd: php bin/console make:form</p>
 
 
 Use Cmd for migration database
