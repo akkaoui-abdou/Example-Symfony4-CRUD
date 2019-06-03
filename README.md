@@ -20,6 +20,17 @@ Manage Notice:
 </ul>
 
 
+
+
+List of Notice
+---
+![alt text](https://github.com/akkaoui-abdou/Example-Symfony4-CRUD/blob/master/public/uploads/images/notice.png)
+
+New Notice
+---
+![alt text](https://github.com/akkaoui-abdou/Example-Symfony4-CRUD/blob/master/public/uploads/images/new-notice.png)
+
+
 Install Project Symfony4
 ---
 
