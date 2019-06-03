@@ -31,12 +31,12 @@ cmd: composer require orm
 
 Use Cmd for migration database
 ---
-Php bin/console make:migration
-Php bin/console doctrine:migrations:migrate  
+<p>Php bin/console make:migration</p>
+<p>Php bin/console doctrine:migrations:migrate  </p>
 
 
 
 Relation in database
 ---
-ManyToOne
-OneToMany
+<p>ManyToOne</p>
+<p>OneToMany</p>
