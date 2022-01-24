@@ -6,7 +6,7 @@ create a simple project symfony4 with action :
 <li>Add and Update and Delete in database with component ORM Doctrine</li>
 <li>Upload picture </li>
 <li>Relation Doctrine between entity: ManyToOne</li>
-<li>Use DataFixtures</li>
+<li>Use DataFixtures: composer require --dev orm-fixtures</li>
 </ul>
 
 
@@ -37,7 +37,7 @@ Install Project Symfony4
 To create your new Symfony application, first make sure you're using PHP 7.1 or higher and have [Composer](https://getcomposer.org/) installed. If you don't, start by [installing Composer globally](https://symfony.com/doc/current/setup/composer.html) on your system.
 
 
-Create your new project by running:
+Create your new project by running command:
 
 composer create-project symfony/website-skeleton my-project
 
