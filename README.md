@@ -1,4 +1,4 @@
-Simple Exemple Symfony 4 CRUD
+Simple Example Symfony 4 CRUD
 ===
 create a simple project symfony4 with action :
 <ul>
